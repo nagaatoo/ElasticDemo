@@ -1,0 +1,10 @@
+applications:
+  - name: ElasticDemo
+    buildpack: java_buildpack #https://github.com/cloudfoundry/java-buildpack.git
+    instances: 1
+    random-route: false
+    path: D:\ElasticDemo\target\ElasticDemo-0.0.1-SNAPSHOT.jar
+    services:
+      - elastic
+      - sputnik-db
+      
